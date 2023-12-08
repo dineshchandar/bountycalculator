@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CVSS Score Bounty Calculator</title>
+</head>
+<body>
+    <h1>CVSS Score Bounty Calculator</h1>
+    <form action="/" method="POST">
+        <label for="score">Enter CVSS Score (1-10):</label><br>
+        <input type="text" id="score" name="score"><br><br>
+        <input type="submit" value="Calculate Bounty">
+    </form>
+    {% if error %}
+        <p style="color: red;">{{ error }}</p>
+    {% endif %}
+</body>
+</html>
